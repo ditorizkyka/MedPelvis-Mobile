@@ -16,7 +16,7 @@ class IntroductionHomePage extends StatelessWidget {
     return Stack(
       children: [
         Container(
-            margin: const EdgeInsets.fromLTRB(20, 20, 20, 0),
+            margin: const EdgeInsets.fromLTRB(20, 5, 20, 0),
             padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
             width: mediaQueryWidth,
             decoration: BoxDecoration(

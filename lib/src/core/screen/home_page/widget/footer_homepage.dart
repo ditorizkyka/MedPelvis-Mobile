@@ -24,7 +24,7 @@ class FooterHomePage extends StatelessWidget {
         child: Align(
           alignment: Alignment.center,
           child: Text(
-            "© 2024 Universitas Hang Tuah Pekanbaru",
+            "@MedPelvis Mobile 2024 | berisik.id",
             style: GoogleFonts.roboto(
                 fontSize: isLandScape
                     ? ScreenUtil().setSp(8)

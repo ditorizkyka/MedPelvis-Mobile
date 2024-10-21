@@ -26,7 +26,11 @@ class HomePage extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Image.asset("assets/logo/medpelvis_mobile.png", height: 30.h),
+                  Container(
+                      color: Colors.black,
+                      child: Image.asset(
+                        "assets/logo/medpelvis_mobile.png",
+                      )),
                   Gap.w8,
                   Row(
                     // crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,9 +64,18 @@ class HomePage extends StatelessWidget {
             title: Container(
               margin: const EdgeInsets.symmetric(horizontal: 17),
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset("assets/logo/medpelvis_mobile.png", height: 30.h),
+                  Container(
+                      width: 35.h,
+                      padding: EdgeInsets.all(7),
+                      decoration: BoxDecoration(
+                        color: ColorApp.greenApp,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Image.asset(
+                        "assets/logo/medpelvis_mobile.png",
+                      )),
                   Gap.w8,
                   Row(
                     // crossAxisAlignment: CrossAxisAlignment.start,

@@ -2,7 +2,7 @@
 Map<String, Map<String, dynamic>> dataContent = {
   "pelvis": {
     "sacrum": {
-      "title": "Sacrum",
+      "title": "Sacrum (Os. Sacrum)",
       "explanation":
           "Tulang kecil yang terdiri dari beberapa segmen tulang belakang yang bergabung menjadi satu. Terletak di ujung paling bawah tulang belakang dan membantu menstabilkan tubuh ketika duduk.",
       "function":
@@ -17,7 +17,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "coccyx": {
-      "title": "Coccyx",
+      "title": "Coccyx (Os. Coccigys)",
       "explanation":
           "Tulang kecil yang terdiri dari beberapa segmen tulang belakang yang bergabung menjadi satu. Terletak di ujung paling bawah tulang belakang dan membantu menstabilkan tubuh ketika duduk.",
       "function":
@@ -32,7 +32,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "sacral_promontory": {
-      "title": "Sacral Promontory",
+      "title": "Sacral Promontory (Promontorium)",
       "explanation":
           "Bagian dari sakrum yang menonjol ke depan di tempat di mana sakrum bertemu dengan vertebra terakhir tulang belakang. Ini adalah titik referensi penting untuk pengukuran pelvis dalam obstetri.",
       "function":
@@ -46,7 +46,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "sacroiliac_joint": {
-      "title": "Sacroiliac Joint",
+      "title": "Sacroiliac Joint (Sayap Sacrum)",
       "explanation":
           "Sendi antara sakrum dan ilium. Fungsi utamanya adalah untuk menyalurkan berat badan dari tulang belakang ke pelvis dan tungkai bawah.",
       "function":
@@ -59,7 +59,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "ishicial_spine": {
-      "title": "Ishicial Spine",
+      "title": "Ischial Spine (Spina Ischiadika)",
       "explanation":
           "Penonjolan tulang pada ischium, bagian dari tulang panggul. Ini adalah titik penting untuk menilai posisi kepala janin selama persalinan.",
       "function":
@@ -72,7 +72,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "pubic_crest": {
-      "title": "Pubic Crest",
+      "title": "Pubic Crest (Tuberculum Pubicum)",
       "explanation":
           "Tepi bagian atas dari tulang pubis, tempat perlekatan otot perut.",
       "function":
@@ -87,7 +87,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "pubic_symphysis": {
-      "title": "Pubic Symphysis",
+      "title": "Pubic Sysmphysis (Symphisis Pubis)",
       "explanation":
           "Sendi kartilaginosa yang menyatukan kedua tulang pubis. Sedikit bergerak untuk memberikan fleksibilitas pada pelvis, terutama selama kehamilan dan melahirkan.",
       "function":
@@ -99,7 +99,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "pubic_arch": {
-      "title": "Pubic arch",
+      "title": "Pubic arch (Arcus Pubis)",
       "explanation":
           "Lengkungan yang dibentuk oleh kedua tulang pubis. Jarak antara tulang ini adalah faktor penting dalam penilaian pelvis untuk persalinan.",
       "function":
@@ -111,7 +111,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "ischium": {
-      "title": "Ischium",
+      "title": "Ischium (Os. Ischium)",
       "explanation":
           "Bagian bawah dan belakang dari pelvis yang membentuk tulang duduk. Ini adalah bagian dari pelvis yang mendukung berat badan saat duduk.",
       "function":
@@ -125,7 +125,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "pelvic_brim": {
-      "title": "Pelvic brim",
+      "title": "Pelvic brim (libra innominata)",
       "explanation":
           "Garis melingkar yang membatasi pintu masuk panggul. Ini memisahkan pelvis mayor (atas) dari pelvis minor (bawah) dan digunakan untuk menilai ukuran pelvis dalam obstetri.",
       "function":
@@ -139,7 +139,7 @@ Map<String, Map<String, dynamic>> dataContent = {
       ],
     },
     "ilium": {
-      "title": "Ilium",
+      "title": "Ilium (Os. Illium)",
       "explanation":
           "Tulang yang membentuk bagian atas dan sisi pelvis. Ini adalah tulang terbesar di pelvis dan memiliki permukaan yang rata dan lebar.",
       "function":

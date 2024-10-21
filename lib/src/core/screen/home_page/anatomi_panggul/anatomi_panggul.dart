@@ -10,7 +10,6 @@ import 'package:medpelvis_mobile/src/widgets/description.dart';
 import 'package:medpelvis_mobile/src/widgets/detail_information_section.dart';
 import 'package:medpelvis_mobile/src/widgets/title_section.dart';
 import 'package:medpelvis_mobile/src/widgets/youtube_section.dart';
-import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class AnatomiPanggul extends StatefulWidget {
@@ -70,26 +69,26 @@ class _AnatomiPanggulState extends State<AnatomiPanggul> {
     super.dispose();
   }
 
-  String _selectedItem = 'Sacrum';
+  String _selectedItem = 'Sacrum (Os. Sacrum)';
 
   // Content based on dropdown selection
   Widget getContentPelvis() {
     switch (_selectedItem) {
-      case 'Sacrum':
+      case 'Sacrum (Os. Sacrum)':
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['sacrum']['imgList'],
           title: dataContent['pelvis']!['sacrum']['title'],
           explanation: dataContent['pelvis']!['sacrum']['explanation'],
           function: dataContent['pelvis']!['sacrum']['function'],
         );
-      case 'Coccyx':
+      case 'Coccyx (Os. Coccigys)':
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['coccyx']['imgList'],
           title: dataContent['pelvis']!['coccyx']['title'],
           explanation: dataContent['pelvis']!['coccyx']['explanation'],
           function: dataContent['pelvis']!['coccyx']['function'],
         );
-      case "Sacral Promontory":
+      case "Sacral Promontory (Promontorium)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!["sacral_promontory"]['imgList'],
           title: dataContent['pelvis']!["sacral_promontory"]['title'],
@@ -97,7 +96,7 @@ class _AnatomiPanggulState extends State<AnatomiPanggul> {
               ['explanation'],
           function: dataContent['pelvis']!["sacral_promontory"]['function'],
         );
-      case "Sacroiliac Joint":
+      case "Sacroiliac Joint (Sayap Sacrum)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['sacroiliac_joint']['imgList'],
           title: dataContent['pelvis']!['sacroiliac_joint']['title'],
@@ -105,35 +104,35 @@ class _AnatomiPanggulState extends State<AnatomiPanggul> {
               ['explanation'],
           function: dataContent['pelvis']!['sacroiliac_joint']['function'],
         );
-      case "Ischial Spine":
+      case "Ischial Spine (Spina Ischiadika)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['ishicial_spine']['imgList'],
           title: dataContent['pelvis']!['ishicial_spine']['title'],
           explanation: dataContent['pelvis']!['ishicial_spine']['explanation'],
           function: dataContent['pelvis']!['ishicial_spine']['function'],
         );
-      case "Pubic Crest":
+      case "Pubic Crest (Tuberculum Pubicum)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['pubic_crest']['imgList'],
           title: dataContent['pelvis']!['pubic_crest']['title'],
           explanation: dataContent['pelvis']!['pubic_crest']['explanation'],
           function: dataContent['pelvis']!['pubic_crest']['function'],
         );
-      case "Pubic Sysmphysis":
+      case "Pubic Sysmphysis (Symphisis Pubis)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['pubic_symphysis']['imgList'],
           title: dataContent['pelvis']!['pubic_symphysis']['title'],
           explanation: dataContent['pelvis']!['pubic_symphysis']['explanation'],
           function: dataContent['pelvis']!['pubic_symphysis']['function'],
         );
-      case "Pubic arch":
+      case "Pubic arch (Arcus Pubis)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['pubic_arch']['imgList'],
           title: dataContent['pelvis']!['pubic_arch']['title'],
           explanation: dataContent['pelvis']!['pubic_arch']['explanation'],
           function: dataContent['pelvis']!['pubic_arch']['function'],
         );
-      case "Ischium":
+      case "Ischium (Os. Ischium)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['ischium']['imgList'],
           title: dataContent['pelvis']!['ischium']['title'],
@@ -148,21 +147,21 @@ class _AnatomiPanggulState extends State<AnatomiPanggul> {
           explanation: dataContent['pelvis']!['acetabulum']['explanation'],
           function: dataContent['pelvis']!['acetabulum']['function'],
         );
-      case "Pelvic brim":
+      case "Pelvic brim (libra innominata)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['pelvic_brim']['imgList'],
           title: dataContent['pelvis']!['pelvic_brim']['title'],
           explanation: dataContent['pelvis']!['pelvic_brim']['explanation'],
           function: dataContent['pelvis']!['pelvic_brim']['function'],
         );
-      case "Ilium":
+      case "Ilium (Os. Illium)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['ilium']['imgList'],
           title: dataContent['pelvis']!['ilium']['title'],
           explanation: dataContent['pelvis']!['ilium']['explanation'],
           function: dataContent['pelvis']!['ilium']['function'],
         );
-      case "Iliach Crest":
+      case "Iliach Crest (Crista Illiaca)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['iliach_crest']['imgList'],
           title: dataContent['pelvis']!['iliach_crest']['title'],
@@ -286,19 +285,19 @@ class _AnatomiPanggulState extends State<AnatomiPanggul> {
                                 });
                               },
                               items: <String>[
-                                "Sacrum",
-                                "Coccyx",
-                                "Sacral Promontory",
-                                "Sacroiliac Joint",
-                                "Ischial Spine",
-                                "Pubic Crest",
-                                "Pubic Sysmphysis",
-                                "Pubic arch",
-                                "Ischium",
-                                "Acetabulum",
-                                "Pelvic brim",
-                                "Ilium",
-                                "Iliach Crest"
+                                "Sacrum (Os. Sacrum)",
+                                "Coccyx (Os. Coccigys)",
+                                "Sacral Promontory (Promontorium)",
+                                "Sacroiliac Joint (Sayap Sacrum)",
+                                "Ischial Spine (Spina Ischiadika)",
+                                "Pubic Crest (Tuberculum Pubicum)",
+                                "Pubic Sysmphysis (Symphisis Pubis)",
+                                "Pubic arch (Arcus Pubis)",
+                                "Ischium (Os. Ischium)",
+                                "Acetabulum (Acetabulum)",
+                                "Pelvic brim (libra innominata)",
+                                "Ilium (Os. Illium)",
+                                "Iliach Crest (Crista Illiaca)"
                               ].map<DropdownMenuItem<String>>((String value) {
                                 return DropdownMenuItem<String>(
                                   value: value,
