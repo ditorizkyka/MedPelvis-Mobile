@@ -140,7 +140,7 @@ class _AnatomiPanggulState extends State<AnatomiPanggul> {
           explanation: dataContent['pelvis']!['ischium']['explanation'],
           function: dataContent['pelvis']!['ischium']['function'],
         );
-      case "Acetabulum":
+      case "Acetabulum (Acetabulum)":
         return DetailInformationSection(
           imgList: dataContent['pelvis']!['acetabulum']['imgList'] ??
               ['assets/image/imagePelvis/sacrum/sacrum1.png'],

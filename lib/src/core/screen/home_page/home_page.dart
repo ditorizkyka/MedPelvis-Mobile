@@ -27,9 +27,14 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Container(
-                      color: Colors.black,
+                      width: 35.h,
+                      padding: EdgeInsets.all(3),
+                      decoration: BoxDecoration(
+                        color: ColorApp.greenApp,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
                       child: Image.asset(
-                        "assets/logo/medpelvis_logo_filled.png",
+                        "assets/logo/medpelvis_logo.png",
                       )),
                   Gap.w8,
                   Row(
@@ -117,7 +122,8 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    padding: const EdgeInsets.fromLTRB(25, 5, 25, 5),
+                    margin: const EdgeInsets.fromLTRB(25, 5, 25, 5),
+                    // padding: const EdgeInsets.fromLTRB(25, 5, 25, 5),
                     width: MediaQuery.of(context).size.width,
                     height: bodyHeight * 0.5,
                     decoration: const BoxDecoration(
@@ -235,7 +241,7 @@ class PilihanPembelajaran extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: bodyHeight * 0.65,
+      height: bodyHeight * 0.66,
       margin: const EdgeInsets.symmetric(horizontal: 25),
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       decoration: BoxDecoration(
