@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                   Container(
                       color: Colors.black,
                       child: Image.asset(
-                        "assets/logo/medpelvis_mobile.png",
+                        "assets/logo/medpelvis_logo_filled.png",
                       )),
                   Gap.w8,
                   Row(
@@ -68,13 +68,13 @@ class HomePage extends StatelessWidget {
                 children: [
                   Container(
                       width: 35.h,
-                      padding: EdgeInsets.all(7),
+                      padding: EdgeInsets.all(3),
                       decoration: BoxDecoration(
                         color: ColorApp.greenApp,
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(15),
                       ),
                       child: Image.asset(
-                        "assets/logo/medpelvis_mobile.png",
+                        "assets/logo/medpelvis_logo.png",
                       )),
                   Gap.w8,
                   Row(

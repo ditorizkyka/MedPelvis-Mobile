@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:medpelvis_mobile/src/constant/themes/colors.dart';
 import 'package:medpelvis_mobile/src/constant/themes/size.dart';
 import 'package:medpelvis_mobile/src/core/data/dataContent.dart';
 import 'package:medpelvis_mobile/src/core/screen/home_page/widget/footer_homepage.dart';
@@ -188,8 +189,8 @@ class _AnatomiPanggulState extends State<AnatomiPanggul> {
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Colors.green,
-                      Color.fromARGB(255, 78, 207, 82),
+                      ColorApp.greenApp,
+                      Color.fromARGB(255, 109, 239, 113),
                     ],
                   ),
                 ),
@@ -250,7 +251,6 @@ class _AnatomiPanggulState extends State<AnatomiPanggul> {
                               ],
                             ),
                           ),
-                          Gap.h16,
                           Gap.h16,
                           Container(
                             padding: const EdgeInsets.all(5),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:medpelvis_mobile/src/constant/themes/colors.dart';
 import 'package:medpelvis_mobile/src/constant/themes/size.dart';
 import 'package:medpelvis_mobile/src/core/data/dataContent.dart';
 import 'package:medpelvis_mobile/src/core/screen/home_page/widget/footer_homepage.dart';
@@ -96,8 +97,8 @@ class _MekanismePersalinanState extends State<MekanismePersalinan> {
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Colors.green,
-                      Color.fromARGB(255, 78, 207, 82),
+                      ColorApp.greenApp,
+                      Color.fromARGB(255, 109, 239, 113),
                     ],
                   ),
                 ),
@@ -123,16 +124,19 @@ class _MekanismePersalinanState extends State<MekanismePersalinan> {
                   children: [
                     Container(
                       width: widthScreen,
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 25, vertical: 12),
+                      padding: const EdgeInsets.symmetric(vertical: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          VideoSection(
-                              youtubePlayerController:
-                                  _youtubePlayerController),
+                          Container(
+                            margin: EdgeInsets.symmetric(horizontal: 25),
+                            child: VideoSection(
+                                youtubePlayerController:
+                                    _youtubePlayerController),
+                          ),
                           Gap.h28,
                           Container(
+                            margin: EdgeInsets.symmetric(horizontal: 25),
                             padding: const EdgeInsets.all(20),
                             decoration: BoxDecoration(
                               color: Colors.white,
@@ -172,7 +176,7 @@ class _MekanismePersalinanState extends State<MekanismePersalinan> {
                                     return Builder(
                                       builder: (BuildContext context) {
                                         return Container(
-                                          height: 500,
+                                          // height: 500,
                                           decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(100),
@@ -182,6 +186,8 @@ class _MekanismePersalinanState extends State<MekanismePersalinan> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Container(
+                                                margin: EdgeInsets.symmetric(
+                                                    horizontal: 25),
                                                 decoration: BoxDecoration(
                                                   color: Colors.white,
                                                   borderRadius:
@@ -296,43 +302,6 @@ class _MekanismePersalinanState extends State<MekanismePersalinan> {
                                     },
                                   ),
                                 ),
-                                // Container(
-                                //   // color: Colors.red,
-                                //   margin: EdgeInsets.fromLTRB(
-                                //       0, SizeApp.customHeight(190), 0, 0),
-                                //   child: Row(
-                                //     mainAxisAlignment: MainAxisAlignment.center,
-                                //     children: widget.listPart
-                                //         .asMap()
-                                //         .entries
-                                //         .map((entry) {
-                                //       return GestureDetector(
-                                //         onTap: () => _controller
-                                //             .animateToPage(entry.key),
-                                //         child: Container(
-                                //           width: 20.0,
-                                //           height: 4.0,
-                                //           margin: const EdgeInsets.symmetric(
-                                //               vertical: 8.0, horizontal: 4.0),
-                                //           decoration: BoxDecoration(
-                                //             borderRadius:
-                                //                 BorderRadius.circular(20),
-                                //             shape: BoxShape.rectangle,
-                                //             color:
-                                //                 (Theme.of(context).brightness ==
-                                //                             Brightness.dark
-                                //                         ? Colors.white
-                                //                         : Colors.green)
-                                //                     .withOpacity(
-                                //                         _current == entry.key
-                                //                             ? 0.9
-                                //                             : 0.4),
-                                //           ),
-                                //         ),
-                                //       );
-                                //     }).toList(),
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),

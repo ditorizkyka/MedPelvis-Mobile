@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:medpelvis_mobile/src/constant/themes/size.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -29,6 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
             colors: [
               Colors.green,
               Color.fromARGB(255, 78, 207, 82),
+              Color.fromARGB(255, 98, 234, 102),
             ],
           ),
         ),
@@ -38,14 +40,12 @@ class _SplashScreenState extends State<SplashScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(
-                width: 210,
-                height: 210,
-                child: Image(
-                    image: AssetImage("assets/logo/medpelvis_mobile.png")),
+                width: 270,
+                height: 270,
+                child:
+                    Image(image: AssetImage("assets/logo/medpelvis_logo.png")),
               ),
-              const SizedBox(
-                height: 30,
-              ),
+              Gap.h8,
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -55,7 +55,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     style: GoogleFonts.roboto(
                       fontSize: 25,
                       fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                      color: const Color.fromARGB(255, 233, 215, 51),
                     ),
                   ),
                   Text(

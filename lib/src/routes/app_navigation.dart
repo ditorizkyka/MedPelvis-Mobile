@@ -17,7 +17,6 @@ class AppNavigation {
   static final GoRouter router = GoRouter(
     initialLocation: initR,
     navigatorKey: navigatorKey,
-    debugLogDiagnostics: true,
     routes: <RouteBase>[
       GoRoute(
         path: '/splashscreen',
